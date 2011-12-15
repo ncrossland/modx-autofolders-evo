@@ -1,0 +1,27 @@
+/* 
+
+----------------INSTALLATION ----------------------------
+
+1. PASTE THE CONTENTS OF THIS FILE INTO THE "PLUGIN CODE" BOX OF A NEW PLUGIN
+
+--------------------------------------------
+
+2. UPLOAD THE REST OF THE FILES INTO YOUR ASSETS/PLUGINS FOLDER
+
+--------------------------------------------
+
+3. CHECK THE FOLLOWING EVENTS ON THE "SYSTEM EVENTS" TAB:
+
+[X]  OnDocFormSave 
+
+--------------------------------------------
+
+4. PASTE THE FOLLOWING INTO PLUGIN CONFIGURATION BOX ON THE "CONFIGURATION" TAB:
+
+&template=Template ID(s) to target;text;4 &new_page_template=Template (ID) for newly created index pages;text;4 &parent=Parent document;text;2 &date_field=Date field;text;pub_date &folder_structure=Folder structure;list;y,y/m,y/m/d;y/m &year_format=Year format in aliases;list;4 digit,2 digit;4 digit &month_format=Month format in aliases;list;Number (no leading 0),Number (leading 0),Text (Full name),Text (Short name);Number (no leading 0) &day_format=Day format in aliases;list;Number (no leading 0),Number (leading 0);Number (no leading 0) &year_format_title=Year format in titles;list;4 digit,2 digit;4 digit &month_format_title=Month format in titles;list;Number (no leading 0),Number (leading 0),Text (Full name),Text (Short name);Text (Full name) &day_format_title=Day format in titles;list;Number (no leading 0),Number (leading 0);Number (no leading 0)
+
+--------------------------------------------*/
+
+
+$asset_path = $modx->config['base_path'] . 'assets/plugins/autofolders/autofolders.inc.php';
+include($asset_path);
